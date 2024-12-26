@@ -18,7 +18,7 @@ const Asidebar = () => {
   };
 
   return (
-    <aside className="w-32 min-h-screen flex flex-col justify-between items-center py-10 gap-10 rounded-r-lg fixed top-0 z-40">
+    <aside className="w-32 min-h-screen flex-col justify-between items-center py-10 gap-10 rounded-r-lg fixed top-0 z-40 hidden md:flex">
       {/* Portfolio Link */}
       <a
         href="/"
@@ -67,3 +67,4 @@ const Asidebar = () => {
 };
 
 export default Asidebar;
+

@@ -3,7 +3,7 @@ import ExperienceItems from "./ExperienceItems";
 import { AiOutlineFire } from "react-icons/ai";
 import { RiCupLine } from "react-icons/ri";
 import { AiOutlineLike } from "react-icons/ai";
-import Timeline from "./Timeline/Timeline"
+import Timeline from "./Timeline/Timeline";
 
 const About = () => {
   const experienceList = [
@@ -27,7 +27,7 @@ const About = () => {
   return (
     <div className="py-20 {/*h-screen*/} flex flex-col items-center gap-16" id="about">
       {/* Başlık */}
-      <h1 className="font-bold text-3xl text-gray-800 mb-5 text-left w-full">
+      <h1 className="font-bold md:text-3xl text-xl text-gray-800 md:mb-5 text-center md:text-left w-full">
         Benim Hakkımda
       </h1>
 
@@ -48,9 +48,9 @@ const About = () => {
           </button>
         </div>
 
-        <div className="flex items-center justify-center gap-10">
+        <div className="flex md:flex-row flex-col items-center justify-center gap-10">
           {/* Açıklama Metni */}
-          <p className="text-center md:text-left text-gray-600 max-w-xl leading-relaxed">
+          <p className="text-center text-sm md:text-base md:text-left text-gray-600 max-w-xl leading-relaxed">
             Merhabalar! Ben Özgür, lise yıllarında oyun geliştirmeye olan
             merakım ile başlayan yazılım yolculuğum, üniversite yıllarında web
             teknolojilerine olan ilgimle devam etti. Şu anda web geliştirme,
@@ -66,12 +66,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-12">
+      <div className="flex md:flex-row flex-col justify-center items-center gap-12">
         {/* İlk Proje Tamamlandı */}
-        <div className="flex items-center">
-          <AiOutlineFire className="mr-2 text-[48px] opacity-65" />
-          <div className="flex flex-col">
-            <span className="text-4xl font-bold">4</span>
+        <div className="flex md:flex-row flex-col items-center">
+          <AiOutlineFire className="md:mr-2 text-[48px] opacity-65" />
+          <div className="flex flex-col text-center">
+            <span className="text-4xl font-bold md:text-left text-center">4</span>
             <span className="text-sm font-semibold text-gray-500 opacity-75">
               Proje Tamamlandı
             </span>
@@ -79,10 +79,10 @@ const About = () => {
         </div>
 
         {/* Çay İçildi */}
-        <div className="flex items-center">
-          <RiCupLine className="mr-2 text-[48px] opacity-65" />
-          <div className="flex flex-col">
-            <span className="text-4xl font-bold">129</span>
+        <div className="flex md:flex-row flex-col items-center">
+          <RiCupLine className="md:mr-2 text-[48px] opacity-65" />
+          <div className="flex flex-col text-center">
+            <span className="text-4xl font-bold md:text-left text-center">129</span>
             <span className="text-sm font-semibold text-gray-500 opacity-75">
               Çay İçildi
             </span>
@@ -90,18 +90,18 @@ const About = () => {
         </div>
 
         {/* Dördüncü Proje Tamamlandı */}
-        <div className="flex items-center">
-          <AiOutlineLike className="mr-2 text-[48px] opacity-65" />
-          <div className="flex flex-col">
-            <span className="text-4xl font-bold">4</span>
+        <div className="flex md:flex-row flex-col items-center">
+          <AiOutlineLike className="md:mr-2 text-[48px] opacity-65" />
+          <div className="flex flex-col text-center">
+            <span className="text-4xl font-bold md:text-left text-center">4</span>
             <span className="text-sm font-semibold text-gray-500 opacity-75">
-              Memnun Musteri
+              Memnun Müşteri
             </span>
           </div>
         </div>
       </div>
 
-      <Timeline/>
+      <Timeline />
     </div>
   );
 };

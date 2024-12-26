@@ -53,7 +53,7 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-6 bg-white rounded-xl p-5">
       {/* Name and Email Fields */}
-      <div className="flex gap-5">
+      <div className="flex md:flex-row flex-col gap-5">
         {/* Name */}
         <div className="flex flex-col gap-2 w-full sm:w-1/2">
           <label htmlFor="username" className="font-semibold text-xl text-gray-700">

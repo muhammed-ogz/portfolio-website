@@ -64,21 +64,24 @@ const Projects = () => {
   console.log(userData);
 
   return (
-    <div className="h-auto flex flex-col items-center gap-10 p-6 " id="projects">
-      <h2 className="font-bold text-3xl text-gray-800 mb-8 text-left">Repom</h2>
+    <div className="h-auto flex flex-col items-center gap-10 p-6 py-20 " id="projects">
+      <h2 className="font-bold md:text-3xl text-xl text-gray-800 md:mb-8 text-center w-full">Repom</h2>
 
       {/* Eğer repoData varsa, repo bilgilerini sırasıyla listele */}
       {repoData.length > 0 ? (
-        <div className="w-1/2">
-          <ul className="space-y-4 flex flex-wrap justify-center items-center gap-10">
-            {repoData.slice(0, sliceValue).map((repo) => (
-              <ProjectItems key={repo.id} repo={repo} />
-            ))}
-            <button onClick={()=>handleSlice()}>
-                <RiArrowDownWideLine size={48} />
-            </button>
-          </ul>
-        </div>
+        <div className="w-1/2 flex flex-col gap-10 items-center justify-center">
+        <ul className="md:space-y-4 flex flex-wrap justify-center items-center md:gap-10 gap-5">
+          {repoData.slice(0, sliceValue).map((repo) => (
+            <ProjectItems key={repo.id} repo={repo} />
+          ))}
+        </ul>
+        
+        {/* Butonun işlevi için işaretleme */}
+        <button onClick={handleSlice}>
+          <RiArrowDownWideLine size={48} />
+        </button>
+      </div>
+      
       ) : (
         <p className="text-gray-500">Henüz hiç repo bulunmamaktadır.</p>
       )}

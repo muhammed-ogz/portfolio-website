@@ -16,7 +16,7 @@ const ScrollDown = ({ textArray }) => {
 
   return (
     <div>
-      <h3 className="text-xl text-gray-600 px-4">
+      <h3 className="text-base md:text-xl text-gray-600 px-4">
         I`m a{" "}
         <span>
           <motion.span
