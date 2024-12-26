@@ -2,7 +2,7 @@ import Form from "./Form/Form";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-5 py-10">
+    <div className="flex flex-col justify-center items-center gap-5 py-10" id="contact">
       <h1 className="font-bold text-3xl text-gray-800 mb-5 text-left w-full">
         Benim Hakkımda
       </h1>

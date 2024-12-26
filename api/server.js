@@ -24,10 +24,10 @@ app.post("/comments", async (req, res) => {
 
     const mailOptions = {
         from: email, // Gönderen kişi
-        to: 'recipient@example.com', // Alıcı e-posta adresi
+        to: 'haydaremre31@gmail.com', // Alıcı e-posta adresi
         subject: `Yeni Yorum: ${title}`, // E-posta konusu
         text: `
-            Yeni bir yorum aldıysınız!
+            Yeni bir yorum aldınız!
 
             Kullanıcı Adı: ${username}
             E-posta: ${email}

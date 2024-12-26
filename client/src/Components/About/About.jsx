@@ -25,7 +25,7 @@ const About = () => {
   ];
 
   return (
-    <div className="py-20 {/*h-screen*/} flex flex-col items-center gap-16">
+    <div className="py-20 {/*h-screen*/} flex flex-col items-center gap-16" id="about">
       {/* Başlık */}
       <h1 className="font-bold text-3xl text-gray-800 mb-5 text-left w-full">
         Benim Hakkımda

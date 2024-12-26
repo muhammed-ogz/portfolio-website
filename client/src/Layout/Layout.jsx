@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
         }}
       />
       <Asidebar />
-      <div className="relative flex flex-col justify-center items-center gap-14">
+      <div className="relative flex flex-col justify-center items-center gap-14 scroll-smooth">
       {children}
       </div>
     </>

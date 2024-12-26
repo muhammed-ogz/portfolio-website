@@ -30,7 +30,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
+    <div className="max-w-6xl mx-auto px-6 py-12" id="services">
       <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
         Hizmetler
       </h2>

@@ -64,7 +64,7 @@ const Projects = () => {
   console.log(userData);
 
   return (
-    <div className="h-auto flex flex-col items-center gap-10 p-6 ">
+    <div className="h-auto flex flex-col items-center gap-10 p-6 " id="projects">
       <h2 className="font-bold text-3xl text-gray-800 mb-8 text-left">Repom</h2>
 
       {/* Eğer repoData varsa, repo bilgilerini sırasıyla listele */}

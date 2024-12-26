@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Form = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
     title: "",
     comment: ""
@@ -56,12 +56,12 @@ const Form = () => {
       <div className="flex gap-5">
         {/* Name */}
         <div className="flex flex-col gap-2 w-full sm:w-1/2">
-          <label htmlFor="name" className="font-semibold text-xl text-gray-700">
+          <label htmlFor="username" className="font-semibold text-xl text-gray-700">
             İsim
           </label>
           <input
-            id="name"
-            name="name"
+            id="username"
+            name="username"
             type="text"
             placeholder="Adınızı girin"
             className="border py-4 px-3 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#D4A373]"

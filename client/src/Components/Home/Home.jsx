@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="py-2 h-screen flex flex-col justify-center items-center relative">
+      <div className="py-2 h-screen flex flex-col justify-center items-center relative" id="home">
         <div className="flex items-center justify-center gap-8">
           {/* Circle */}
           <div className="w-96 h-96 bg-white rounded-full shadow-lg"></div>
